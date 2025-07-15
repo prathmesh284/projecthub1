@@ -105,14 +105,14 @@ git checkout -b feature-name
 
 ---
 
-## 📄 License
+<!-- ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
 
----
+--- -->
 
 ## 👨‍💻 Author
 
-**\[Your Name]**
+**\[Prathmesh Jadhav]**
 [![GitHub](https://img.shields.io/badge/GitHub-your--username-black?logo=github)](https://github.com/prathmesh284)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Your%20Name-blue?logo=linkedin)](https://www.linkedin.com/in/prathmesh-jadhav-6a71b4257)
