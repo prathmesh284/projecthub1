@@ -1,0 +1,55 @@
+.auth-card {
+  width: 400px;
+  margin: auto;
+  margin-top: 200px;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background-color: rgba(108, 108, 108, 0.1);
+  text-align: center;
+}
+
+.ant-card-hoverable:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  transform: translateX(50px),translateY(50px);
+  transition: all 0.3s ease;
+}
+
+.card-title {
+  font-size: 28px;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1890ff;
+}
+
+.custom-input {
+  margin-bottom: 15px;
+}
+
+/* Text color for inputs */
+.custom-input .ant-input,
+.custom-input .ant-input-password input {
+  color: #000000 !important;
+  font-size: 16px;
+}
+
+/* Placeholder color */
+.custom-input .ant-input::placeholder,
+.custom-input .ant-input-password input::placeholder {
+  color: #313131 !important;
+  opacity: 1;
+}
+
+/* Button */
+.custom-button {
+  background-color: #1890ff !important;
+  border-radius: 8px;
+  border: #313131;
+  color: white;
+  font-weight: bold;
+}
+
+.custom-button :hover{
+    color: white;   
+}
