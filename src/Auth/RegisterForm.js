@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
-import { auth } from '../firebase';
+import { auth } from './firebase';
 import { Button, Input, Card } from 'antd';
 import './LoginForm.css'; // shared styles
 

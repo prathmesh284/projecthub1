@@ -6,7 +6,7 @@
 .pnp.js
 
 #secret-keys
-/src/firebase.js
+src/Auth/firebase.js
 
 # testing
 /coverage
