@@ -1,11 +1,11 @@
 # 🚀 ProjectHub
 
-[![Build Status](https://img.shields.io/github/actions/workflow/status/your-username/projecthub/main.yml?branch=main\&label=build\&logo=github-actions)](https://github.com/prathmesh284/projecthub/actions)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/your-username/projecthub1/main.yml?branch=main\&label=build\&logo=github-actions)](https://github.com/prathmesh284/projecthub1/actions)
 [![Live Demo](https://img.shields.io/badge/demo-live-success?logo=vercel)](https://your-demo-link.com)
-[![Version](https://img.shields.io/github/v/release/your-username/projecthub?label=version\&logo=github)](https://github.com/prathmesh284/projecthub/releases)
+[![Version](https://img.shields.io/github/v/release/your-username/projecthub?label=version\&logo=github)](https://github.com/prathmesh284/projecthub1/releases)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Status](https://img.shields.io/badge/status-active-brightgreen?style=flat-square)](#)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-green.svg)](https://github.com/prathmesh284/projecthub/pulls)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-green.svg)](https://github.com/prathmesh284/projecthub1/pulls)
 
 ---
 
