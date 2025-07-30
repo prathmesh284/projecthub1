@@ -6,7 +6,7 @@
   border: 1px solid black;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  background-color: rgba(108, 108, 108, 0.1);
+  background-color: rgba(108, 108, 108, 0.3);
   text-align: center;
 }
 
@@ -29,17 +29,33 @@
 
 /* Text color for inputs */
 .custom-input .ant-input,
-.custom-input .ant-input-password input {
+.custom-input .ant-input-password input,
+.custom-input .ant-input-password {
+  background-color: rgba(255, 255, 255, 0.100) !important;
   color: #000000 !important;
+  backdrop-filter: blur(2px);
   font-size: 16px;
 }
 
-/* Placeholder color */
+/* Style input placeholder only */
 .custom-input .ant-input::placeholder,
 .custom-input .ant-input-password input::placeholder {
-  color: #313131 !important;
+  color: #ffffff !important;
   opacity: 1;
 }
+
+/* Style actual input text */
+.custom-input .ant-input,
+.custom-input .ant-input-password input {
+  color: #000000 !important;
+  background-color: rgba(16, 15, 15, 0.118) !important;
+}
+
+/* Optional: remove white background from wrapper */
+.custom-input .ant-input-password {
+  background: transparent !important;
+}
+
 
 /* Button */
 .custom-button {
@@ -50,6 +66,29 @@
   font-weight: bold;
 }
 
-.custom-button :hover{
-    color: white;   
+.custom-button:hover {
+  color: white;
+  background-color: #40a9ff;
+  transition: all 0.2s ease-in-out;
+}
+
+.login-container {
+  position: relative;
+}
+
+.top-right-link {
+  position: absolute;
+  top: -180px;
+  right: 30px;
+  font-size: 16px;
+}
+
+.top-right-link a {
+  color: #1890ff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.top-right-link a:hover {
+  text-decoration: underline;
 }

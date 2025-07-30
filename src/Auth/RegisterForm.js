@@ -1,19 +1,34 @@
-import React, { useState } from 'react';
-import { createUserWithEmailAndPassword } from 'firebase/auth';
-import { auth } from './firebase';
-import { Button, Input, Card } from 'antd';
-import './LoginForm.css'; // shared styles
+import React, { useState } from "react";
+import { createUserWithEmailAndPassword } from "firebase/auth";
+import { auth } from "./firebase";
+import { Button, Input, Card } from "antd";
+import "./LoginForm.css";
+import axios from "axios";
 
 export const RegisterForm = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
+  // Inside register function:
   const register = async () => {
     try {
-      await createUserWithEmailAndPassword(auth, email, password);
-      alert('User registered!');
+      const userCredential = await createUserWithEmailAndPassword(
+        auth,
+        email,
+        password
+      );
+      alert("User registered with Firebase!");
+
+      // Store in backend DB
+      await axios.post("/api/clients/register", {
+        email,
+        password, // only store this if you're not using Firebase Auth to login
+      });
+
+      alert("User info saved in backend DB!");
     } catch (err) {
-      alert(err.message);
+      console.error("Registration error:", err);
+      alert(`Error: ${err.response?.data?.message || err.message}`);
     }
   };
 
@@ -26,14 +41,14 @@ export const RegisterForm = () => {
       <div className="custom-input">
         <Input
           value={email}
-          onChange={e => setEmail(e.target.value)}
+          onChange={(e) => setEmail(e.target.value)}
           placeholder="Email"
         />
       </div>
       <div className="custom-input">
         <Input.Password
           value={password}
-          onChange={e => setPassword(e.target.value)}
+          onChange={(e) => setPassword(e.target.value)}
           placeholder="Password"
         />
       </div>

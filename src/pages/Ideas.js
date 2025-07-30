@@ -422,8 +422,8 @@ const ProjectIdeasByDomain = () => {
   }, {});
 
   return (
-    <div className="w-screen h-screen overflow-y-auto bg-gradient-to-b from-slate-100 to-slate-100 py-10">
-      <div className="max-w-5xl space-y-12 space-x-28">
+    <div className="h-screen overflow-y-auto bg-gradient-to-b from-slate-100 to-slate-100 py-10 scrollbar-hide">
+      <div className="max-w-5xl space-y-12 space-x-6">
         <h1 className="text-4xl font-bold text-center text-cyan-700 drop-shadow-sm">
           🚀 Innovative Project Ideas
         </h1>

@@ -1,0 +1,17 @@
+/* .auth-page{
+    height: 100vh;
+    position: relative;
+    top:-150;
+    background-image: url("assets/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ */
+
+body.login-background {
+  background-image: url('assets/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
